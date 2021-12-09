@@ -1,6 +1,7 @@
 package Stack;
 
 public class Stack {
+
     private int [] stack;
     private int max;
     private int top;
@@ -23,12 +24,21 @@ public class Stack {
         if (isFull() == false){
             // top++;
             // stack[top] = value;
-
             // stack ditambah dlu baru di add value
             stack[++top] = value;
         }
         else{
             System.out.println("StudiKasus.Stack penuh!");
+        }
+    }
+    public void pop() {
+        if(isEmpty()==false) {
+            System.out.println("stack yang dihapus " +
+                    stack[top]);
+            top--;
+        }
+        else {
+            System.out.println("stack kosong");
         }
     }
 
@@ -56,15 +66,6 @@ public class Stack {
         }
     }
 
-    public void pop() {
-        if(isEmpty()==false) {
-            System.out.println("stack yang dihapus " +
-                    stack[top]);
-            top--;
-        }
-        else {
-            System.out.println("stack kosong");
-        }
-    }
+
 
 }
