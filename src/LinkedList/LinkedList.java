@@ -104,7 +104,7 @@ public class LinkedList {
 
     // Delete first
     public ListNode delFirst(){
-        ListNode NodePtr = new ListNode();
+        ListNode NodePtr;
         NodePtr = head;
         head = NodePtr.getNext();
         NodePtr.setNext(null);
@@ -112,7 +112,7 @@ public class LinkedList {
     }
     // Delete After
     public ListNode delAfter(ListNode Previous){
-        ListNode NodePtr = new ListNode();
+        ListNode NodePtr;
         NodePtr = Previous.getNext();
         Previous.setNext(NodePtr.getNext());
         NodePtr.setNext(null);
@@ -133,7 +133,6 @@ public class LinkedList {
         if (isOneElement()){
             Ptr = delFirst();
         }
-
 
         while(Ptr.getNext().getNext()!= null){
             Ptr = Ptr.getNext();
