@@ -33,6 +33,6 @@ class ListNode{
 
     @Override
     public String toString(){
-        return"isi Node : "+this.value;
+        return"isi StudiKasus.Node : "+this.value;
     }
 }

@@ -26,7 +26,7 @@ public class StackMahasiswa {
             mhs[top][2] = nilai;
         }
         else {
-            System.out.println("Stack Penuh");
+            System.out.println("StudiKasus.Stack Penuh");
         }
     }
 
@@ -39,7 +39,7 @@ public class StackMahasiswa {
             top--;
         }
         else{
-            System.out.println("Stack kosong");
+            System.out.println("StudiKasus.Stack kosong");
         }
     }
 

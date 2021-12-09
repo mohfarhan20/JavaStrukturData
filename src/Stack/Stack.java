@@ -28,7 +28,7 @@ public class Stack {
             stack[++top] = value;
         }
         else{
-            System.out.println("Stack penuh!");
+            System.out.println("StudiKasus.Stack penuh!");
         }
     }
 

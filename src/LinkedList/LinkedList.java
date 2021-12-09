@@ -14,7 +14,7 @@ public class LinkedList {
 
         // Membuat node baru
         ListNode newNode = new ListNode(newValue);
-        // Node untuk transversing array
+        // StudiKasus.Node untuk transversing array
         ListNode NodeNxt;
 
         // Jika headnya null (list masih kosong)
@@ -31,7 +31,7 @@ public class LinkedList {
             while(NodeNxt.getNext()!= null){
                 NodeNxt = NodeNxt.getNext();
             }
-            // Node Nxt akan mengeSet bahwa node (newNode) akan jadi node terakhir
+            // StudiKasus.Node Nxt akan mengeSet bahwa node (newNode) akan jadi node terakhir
             // dengan demikian data baru akan dimasukkan ke dalam node
             NodeNxt.setNext(newNode);
 
