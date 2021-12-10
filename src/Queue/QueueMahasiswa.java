@@ -34,7 +34,7 @@ public class QueueMahasiswa {
             System.out.println("Antrian Kosong");
         }
         else{
-            System.out.println("Nilai yang dihapus : " + queue[0]);
+            System.out.println("Mahasiswa yang dihapus : " + queue[0]);
             for(int i = 1 ; i <= tail; i++){
                 queue[i-1] = queue[i];
                 queue[i] = null;
