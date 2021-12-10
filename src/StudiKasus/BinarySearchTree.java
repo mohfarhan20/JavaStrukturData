@@ -31,7 +31,7 @@ public class BinarySearchTree {
   }
 
   @Override
-  public String toString() { // dfs inorder traversal 
+  public String toString() { // dfs inorder traversal
     return "[ " + toStringHelper(this.root) + " ]";
   }
 
@@ -39,9 +39,20 @@ public class BinarySearchTree {
     if (root == null) {
       return "";
     }
+// in oder
+    // return toStringHelper(root.getLeft()) + root.getValue() + "  " + toStringHelper(root.getRight());
+    // pre order
+  // return (root.getValue())+" "+toStringHelper(root.getLeft())+ toStringHelper(root.getRight());
+    // post order
+ return toStringHelper(root.getLeft())+ toStringHelper(root.getRight())+ root.getValue()+" ";
 
-    return toStringHelper(root.getLeft()) + root.getValue() + "  " + toStringHelper(root.getRight());
+
   }
+//  public String toString() {
+//    return "BinaryTree\n{" +
+//            "root=" + root +
+//            '}';
+//  }
 }
 
 class BstNode {
@@ -78,4 +89,14 @@ class BstNode {
   public void setValue(int value) {
     this.value = value;
   }
+
+  @Override
+  public String toString() {
+    return "Node{" +
+            "value=" + value +
+            ",\nleft=" + left +
+            ",right=" + right +
+            '}';
+  }
+
 }
